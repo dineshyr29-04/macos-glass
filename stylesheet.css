@@ -128,8 +128,11 @@
 }
 
 /* ------------------------------------------------------------------------------
- * 7. PRESERVE TOP PANEL (DO NOT TOUCH TOP PANEL HEIGHT OR DIMENSIONS)
+ * 7. PRESERVE TOP PANEL (FIXED DEFAULT 32px HEIGHT & TRANSPARENT BACKGROUND)
  * ------------------------------------------------------------------------------ */
 .macos-glass-active #panel {
-    background-color: transparent;
+    background-color: transparent !important;
+    height: 32px !important;
+    min-height: 32px !important;
+    font-size: 11pt !important;
 }
