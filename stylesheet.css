@@ -1,10 +1,44 @@
 /* ==============================================================================
- *           macOS Sequoia / iOS 18 High-Contrast Liquid Glass CSS
- *                 Engineered for Pixel-Perfect Readability
+ *           macOS Sequoia / iOS 18 UNIVERSAL EVERYTHING-GLASS CSS
+ *         Engineered for All Popups, Menus, Extensions & Shell Elements
  * ============================================================================== */
 
 /* ------------------------------------------------------------------------------
- * 1. TOP PANEL (FROSTED DARK GLASS - HIGH CONTRAST, NO SEE-THROUGH BLEED)
+ * 1. UNIVERSAL POPUP MENUS & EXTENSIONS GLASS (Clipboard Indicator, Date/Clock, System)
+ * ------------------------------------------------------------------------------ */
+.macos-glass-active .popup-menu-content,
+.macos-glass-active .popup-menu,
+.macos-glass-active .popup-sub-menu,
+.macos-glass-active .panel-menu-popover,
+.macos-glass-active .popup-menu-boxpointer,
+.macos-glass-active .quick-settings-system-item,
+.macos-glass-active .quick-settings-menu,
+.macos-glass-active .candidate-popup-box {
+    background: linear-gradient(145deg, rgba(24, 28, 44, 0.86) 0%, rgba(12, 14, 24, 0.92) 100%) !important;
+    border: 1.5px solid rgba(255, 255, 255, 0.28) !important;
+    border-radius: 20px !important;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.65), 
+                inset 0 1.5px 1.5px rgba(255, 255, 255, 0.40) !important;
+    color: #ffffff !important;
+    padding: 14px !important;
+}
+
+/* Popup Menu Items */
+.macos-glass-active .popup-menu-item {
+    color: #ffffff !important;
+    border-radius: 10px !important;
+    padding: 8px 12px !important;
+    transition: background-color 150ms ease !important;
+}
+
+.macos-glass-active .popup-menu-item:hover,
+.macos-glass-active .popup-menu-item:selected {
+    background-color: rgba(255, 255, 255, 0.15) !important;
+    color: #ffffff !important;
+}
+
+/* ------------------------------------------------------------------------------
+ * 2. TOP PANEL (FROSTED DARK GLASS)
  * ------------------------------------------------------------------------------ */
 .macos-glass-active #panel {
     background-color: rgba(20, 22, 34, 0.82) !important;
@@ -23,21 +57,6 @@
 }
 
 /* ------------------------------------------------------------------------------
- * 2. CONTROL CENTER & QUICK SETTINGS (HIGH-CONTRAST FROSTED GLASS)
- * ------------------------------------------------------------------------------ */
-.macos-glass-active .quick-settings-system-item,
-.macos-glass-active .quick-settings-menu,
-.macos-glass-active .popup-menu-content {
-    background: linear-gradient(145deg, rgba(26, 30, 46, 0.90) 0%, rgba(16, 18, 30, 0.95) 100%) !important;
-    border: 1.5px solid rgba(255, 255, 255, 0.25) !important;
-    border-radius: 24px !important;
-    box-shadow: 0 24px 60px rgba(0, 0, 0, 0.75), 
-                inset 0 1px 1px rgba(255, 255, 255, 0.35) !important;
-    padding: 16px !important;
-    color: #ffffff !important;
-}
-
-/* ------------------------------------------------------------------------------
  * 3. CONTROL CENTER TOGGLE CAPSULES (Wi-Fi, Bluetooth, Power Mode)
  * ------------------------------------------------------------------------------ */
 .macos-glass-active .quick-toggle {
@@ -50,7 +69,6 @@
     transition: all 180ms ease-in-out !important;
 }
 
-/* ACTIVE CYAN LIQUID GLASS SHEEN (Exact match to Wi-Fi / AirDrop) */
 .macos-glass-active .quick-toggle:checked,
 .macos-glass-active .quick-toggle:active {
     background: linear-gradient(135deg, rgba(14, 165, 233, 0.80) 0%, rgba(3, 105, 161, 0.90) 100%) !important;
@@ -60,7 +78,6 @@
                 0 0 20px rgba(14, 165, 233, 0.55) !important;
 }
 
-/* Icon Buttons Inside Toggles */
 .macos-glass-active .quick-toggle-icon {
     background-color: #ffffff !important;
     color: #0c4a6e !important;
@@ -88,7 +105,7 @@
 }
 
 /* ------------------------------------------------------------------------------
- * 5. DOCK LIQUID GLASS (Allows Unconstrained Hover Magnification)
+ * 5. DOCK LIQUID GLASS
  * ------------------------------------------------------------------------------ */
 .macos-glass-active .dash-background {
     background: linear-gradient(145deg, rgba(22, 26, 40, 0.82) 0%, rgba(12, 14, 24, 0.90) 100%) !important;
@@ -126,10 +143,12 @@
 }
 
 /* ------------------------------------------------------------------------------
- * 7. OSD HUD WINDOWS (VOLUME / BRIGHTNESS OVERLAYS)
+ * 7. OSD HUD WINDOWS & MODALS
  * ------------------------------------------------------------------------------ */
 .macos-glass-active .osd-window,
-.macos-glass-active .modal-dialog {
+.macos-glass-active .modal-dialog,
+.macos-glass-active .switcher-list,
+.macos-glass-active .workspace-switcher {
     background: linear-gradient(145deg, rgba(24, 28, 44, 0.88) 0%, rgba(12, 16, 26, 0.94) 100%) !important;
     border: 1.5px solid rgba(255, 255, 255, 0.30) !important;
     border-radius: 24px !important;
