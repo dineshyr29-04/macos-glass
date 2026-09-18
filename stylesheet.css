@@ -156,9 +156,43 @@
 .macos-glass-active .osd-window,
 .macos-glass-active .modal-dialog,
 .macos-glass-active .switcher-list,
-.macos-glass-active .workspace-switcher {
+.macos-glass-active .workspace-switcher,
+.macos-glass-active .run-dialog,
+.macos-glass-active .end-session-dialog,
+.macos-glass-active .prompt-dialog {
     background: linear-gradient(145deg, rgba(24, 28, 44, 0.92) 0%, rgba(12, 16, 26, 0.96) 100%) !important;
     border: 1.5px solid rgba(255, 255, 255, 0.30) !important;
     border-radius: 24px !important;
     box-shadow: 0 18px 45px rgba(0, 0, 0, 0.65) !important;
+}
+
+/* ------------------------------------------------------------------------------
+ * 8. MEDIA CONTROLS & CALENDAR POPOVERS
+ * ------------------------------------------------------------------------------ */
+.macos-glass-active .media-message,
+.macos-glass-active .media-message-cover-icon {
+    background: rgba(255, 255, 255, 0.08) !important;
+    border: 1px solid rgba(255, 255, 255, 0.20) !important;
+    border-radius: 16px !important;
+}
+
+.macos-glass-active .datemenu-popover,
+.macos-glass-active .calendar-menu {
+    background: linear-gradient(145deg, rgba(24, 28, 44, 0.92) 0%, rgba(12, 14, 24, 0.96) 100%) !important;
+    border: 1.5px solid rgba(255, 255, 255, 0.28) !important;
+    border-radius: 22px !important;
+}
+
+.macos-glass-active .calendar-month-label,
+.macos-glass-active .calendar-day-heading,
+.macos-glass-active .calendar-day {
+    color: #ffffff !important;
+    font-weight: 600 !important;
+}
+
+.macos-glass-active .search-entry {
+    background: rgba(255, 255, 255, 0.12) !important;
+    border: 1.5px solid rgba(255, 255, 255, 0.30) !important;
+    border-radius: 20px !important;
+    color: #ffffff !important;
 }
