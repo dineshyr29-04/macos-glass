@@ -1,0 +1,79 @@
+/* ==============================================================================
+ *                         macOS Glass GNOME Extension CSS
+ *                       Created for @dineshyr29-04 on GitHub
+ * ============================================================================== */
+
+/* ------------------------------------------------------------------------------
+ * 1. NOTIFICATION BANNERS & NOTIFICATION CENTER GLASS
+ * ------------------------------------------------------------------------------ */
+.macos-glass-active .notification-banner,
+.macos-glass-active .notification,
+.macos-glass-active .message-list-section,
+.macos-glass-active .message {
+    background-color: rgba(22, 22, 34, 0.72) !important;
+    border: 1px solid rgba(255, 255, 255, 0.16) !important;
+    border-radius: 18px !important;
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.45), inset 0 1px 0 rgba(255, 255, 255, 0.25) !important;
+    color: #ffffff !important;
+    padding: 12px 16px !important;
+}
+
+/* Notification Header Title & Body Formatting */
+.macos-glass-active .notification-title,
+.macos-glass-active .message-title {
+    font-weight: 700 !important;
+    color: #ffffff !important;
+}
+
+.macos-glass-active .notification-body,
+.macos-glass-active .message-body {
+    color: rgba(240, 240, 255, 0.88) !important;
+}
+
+/* ------------------------------------------------------------------------------
+ * 2. QUICK SETTINGS POPUP MENU GLASS
+ * ------------------------------------------------------------------------------ */
+.macos-glass-active .quick-settings-system-item,
+.macos-glass-active .quick-settings-menu,
+.macos-glass-active .popup-menu-content {
+    background-color: rgba(20, 20, 32, 0.75) !important;
+    border: 1px solid rgba(255, 255, 255, 0.18) !important;
+    border-radius: 22px !important;
+    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.50), inset 0 1px 0 rgba(255, 255, 255, 0.28) !important;
+    padding: 14px !important;
+}
+
+/* Quick Settings Toggle Buttons (Pill Glass) */
+.macos-glass-active .quick-toggle {
+    background-color: rgba(255, 255, 255, 0.08) !important;
+    border: 1px solid rgba(255, 255, 255, 0.12) !important;
+    border-radius: 14px !important;
+    color: #ffffff !important;
+    transition: all 180ms ease-in-out !important;
+}
+
+.macos-glass-active .quick-toggle:checked,
+.macos-glass-active .quick-toggle:active {
+    background-color: rgba(192, 132, 252, 0.35) !important;
+    border-color: rgba(236, 72, 153, 0.60) !important;
+    box-shadow: 0 0 12px rgba(236, 72, 153, 0.40) !important;
+}
+
+/* ------------------------------------------------------------------------------
+ * 3. OSD VOLUME / BRIGHTNESS & MODAL DIALOGS GLASS
+ * ------------------------------------------------------------------------------ */
+.macos-glass-active .osd-window,
+.macos-glass-active .modal-dialog {
+    background-color: rgba(18, 18, 28, 0.80) !important;
+    border: 1px solid rgba(255, 255, 255, 0.20) !important;
+    border-radius: 20px !important;
+    box-shadow: 0 14px 36px rgba(0, 0, 0, 0.45) !important;
+}
+
+/* ------------------------------------------------------------------------------
+ * 4. PRESERVE TOP PANEL (DO NOT TOUCH TOP PANEL HEIGHT OR DIMENSIONS)
+ * ------------------------------------------------------------------------------ */
+.macos-glass-active #panel {
+    /* Top panel height & size are strictly preserved */
+    background-color: transparent;
+}

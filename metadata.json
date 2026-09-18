@@ -1,0 +1,13 @@
+{
+  "name": "macOS Glass",
+  "description": "Pixel-perfect macOS glassmorphism styling for notifications, quick settings, popups, and OSDs without altering top panel height.",
+  "uuid": "macos-glass@dineshyr29-04",
+  "shell-version": [
+    "46",
+    "47",
+    "48",
+    "49",
+    "50"
+  ],
+  "url": "https://github.com/dineshyr29-04/macos-glass"
+}
